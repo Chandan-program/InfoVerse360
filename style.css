@@ -1,0 +1,87 @@
+/* Custom styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured post */
+.featured-post {
+    background-color: #f8f9fa;
+}
+
+.featured-post h1 {
+    font-weight: 700;
+    color: #212529;
+}
+
+/* Blog posts */
+.blog-posts .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #f8f9fa;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .featured-post .col-lg-6 {
+        margin-bottom: 20px;
+    }
+    
+    .featured-post h1 {
+        font-size: 1.8rem;
+    }
+    
+    .featured-post p.lead {
+        font-size: 1rem;
+    }
+}
